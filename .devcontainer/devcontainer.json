@@ -1,5 +1,5 @@
 {
-  "name": "Blackjack",
+  "name": "Blog",
   "dockerComposeFile": [
     "../docker-compose.yml"
   ],

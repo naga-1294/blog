@@ -1,4 +1,4 @@
 FROM mysql:8.0
 
-# ì¬‚µ‚½Ý’èƒtƒ@ƒCƒ‹‚ðƒRƒ“ƒeƒi“à‚ÉƒRƒs[
+# ä½œæˆã—ãŸè¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚³ãƒ³ãƒ†ãƒŠå†…ã«ã‚³ãƒ”ãƒ¼
 COPY ./docker/db/my.conf /etc/my.conf
