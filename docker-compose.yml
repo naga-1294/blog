@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/app/Dockerfile
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "5080:80"
+  db:
+    build:
+      dockerfile: docker/db/Dockerfile
+    environment:
+      - "MYSQL_ROOT_PASSWORD=password"
+      - "MYSQL_DATABASE=laravel"
+      - "MYSQL_USER=laravel"
+      - "MYSQL_PASSWORD=password"
+    volumes:
+      - ./data:/var/lib/mysql
+    ports:
+      - "3306:3306"
